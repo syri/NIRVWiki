@@ -1,0 +1,50 @@
+{
+	"categories": [{
+      "name": "default",
+      "path": "",
+			"pages": [
+        {
+					"name": "Home",
+					"file": "home.md",
+					"home": true
+				},
+				{
+					"name": "Credits",
+					"file": "credits.md"
+				}
+			]
+		},
+		{
+      "name": "Characters",
+      "path": "characters/",
+			"pages": []
+    },
+    {
+      "name": "Worlds",
+      "path": "worlds/",
+			"pages": []
+    },
+    {
+      "name": "Game Spec",
+      "path": "gamespec/",
+			"pages": [
+        {
+				  "name": "Battle System",
+				  "file": "battlesystem.md"
+        },
+        {
+				  "name": "HUD",
+				  "file": "hud.md"
+        },
+        {
+				  "name": "Traits",
+				  "file": "traits.md"
+        },
+        {
+				  "name": "World",
+				  "file": "world.md"
+        }
+      ]
+		}
+	]
+}
