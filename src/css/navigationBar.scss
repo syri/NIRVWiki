@@ -44,10 +44,6 @@
       }
 
       .navigation-page {
-        :hover {
-          background-color: #686868;
-        }
-      
         .navigation-page-name {
           display: flex;
           align-items: center;
@@ -61,6 +57,10 @@
         
           @include sm {
             height: 2rem;
+          }
+
+          &:hover {
+            background-color: #686868;
           }
         }
       }
