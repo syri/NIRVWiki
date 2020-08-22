@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Logo from '../assets/Logo-Simple.svg';
+import Logo from '../assets/logo-simple.png';
 
 
 interface IHeaderPageProps {}
@@ -38,7 +38,7 @@ export default class Header extends Component<IHeaderPageProps, IHeaderPageState
 
     this.navigationOpen = true;
 
-    if (navigationBar) navigationBar.style.display = 'block';
+    if (navigationBar) navigationBar.style.display = 'flex';
     if (wikiPageContent && setContentVisibility) wikiPageContent.style.display = 'none';
   }
 
@@ -49,7 +49,7 @@ export default class Header extends Component<IHeaderPageProps, IHeaderPageState
     this.navigationOpen = false;
 
     if (navigationBar) navigationBar.style.display = 'none';
-    if (wikiPageContent && setContentVisibility) wikiPageContent.style.display = 'block';
+    if (wikiPageContent && setContentVisibility) wikiPageContent.style.display = 'flex';
   }
 
   resize(): void {
