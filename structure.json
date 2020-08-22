@@ -25,6 +25,16 @@
 			"pages": []
     },
     {
+      "name": "Lore",
+      "path": "lore/",
+			"pages": []
+    },
+    {
+      "name": "Story",
+      "path": "story/",
+			"pages": []
+    },
+    {
       "name": "Game Spec",
       "path": "gamespec/",
 			"pages": [
