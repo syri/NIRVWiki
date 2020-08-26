@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 
-interface IPageProps {
+interface INavigationPageProps {
   category: string;
   name: string;
   file: string;
 }
-interface IPageState {}
+interface INavigationPageState {}
 
-export default class Page extends Component<IPageProps, IPageState> {
+export default class NavigationPage extends Component<INavigationPageProps, INavigationPageState> {
   openPage(): void {
     if (this.props.category === 'default') window.location.hash = '#/' + this.props.file.slice(0, -3);
     else window.location.hash = '#/' + this.props.category + this.props.file.slice(0, -3);

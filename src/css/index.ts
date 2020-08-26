@@ -1,6 +1,5 @@
 import './index.scss';
 
-import './footer.scss';
 import './header.scss';
-import './navigationBar.scss';
+import './navigation.scss';
 import './wikiPage.scss';

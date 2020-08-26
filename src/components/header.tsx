@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 
-import Logo from '../assets/logo-simple.png';
 
+interface IHeaderProps {}
+interface IHeaderState {}
 
-interface IHeaderPageProps {}
-interface IHeaderPageState {}
-
-export default class Header extends Component<IHeaderPageProps, IHeaderPageState> {
+export default class Header extends Component<IHeaderProps, IHeaderState> {
   private navigationOpen: boolean;
 
-  constructor(props: IHeaderPageProps) {
+  constructor(props: IHeaderProps) {
     super(props);
 
     this.navigationOpen = true;
@@ -53,9 +51,9 @@ export default class Header extends Component<IHeaderPageProps, IHeaderPageState
   }
 
   resize(): void {
-    if (window.innerWidth <= 425) this.hideNavigation();
+    if (window.innerWidth <= 576) this.hideNavigation();
 
-    if (!this.navigationOpen && window.innerWidth > 425) {
+    if (!this.navigationOpen && window.innerWidth > 576) {
       let wikiPageContent = document.getElementById('content');
 
       this.showNavigation();
@@ -73,7 +71,6 @@ export default class Header extends Component<IHeaderPageProps, IHeaderPageState
     return(
       <div id='header' className='unselectable'>
         <div id='header-menu' onClick={() => this.toggleNavigation()}>☰</div>
-        <img id='header-logo' src={Logo} alt='Logo' />
         <h1 onClick={() => this.onHeaderClicked()}>NIRV Wiki</h1>
       </div>
     );

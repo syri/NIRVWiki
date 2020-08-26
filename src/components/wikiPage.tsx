@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Markdown from 'markdown-to-jsx';
-import NavigationBar from './navigationBar';
+import Navigation from './navigation';
 
 
 interface IWikiPageProps {}
@@ -71,7 +71,7 @@ export default class WikiPage extends Component<IWikiPageProps, IWikiPageState> 
   render(): JSX.Element {
     return(
       <div id='wiki-page'>
-        <NavigationBar structure={this.state.structure} />
+        <Navigation structure={this.state.structure} />
         <div id='content'>
           <Markdown>{this.state.currentPage ? this.state.currentPage.content : ''}</Markdown>
         </div>

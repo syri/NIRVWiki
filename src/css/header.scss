@@ -5,33 +5,21 @@
   display: flex;
 
   width: 100%;
-  height: 9rem;
+  height: 4rem;
 
   background-color: #636363;
   border-bottom: 1px solid #1e1e1e;
-
-  @include sm {
-    height: 4rem;
-  }
 
   h1 {
     display:flex;
     align-items:center;
 
-    margin: 0;
+    margin: 0 1rem;
 
     height: 100%;
-  }
 
-  #header-logo {
-    display: block;
-
-    margin: 0.5rem;
-
-    width: 8rem;
-
-    @include sm {
-      display: none;
+    &:hover {
+      cursor: pointer;
     }
   }
 

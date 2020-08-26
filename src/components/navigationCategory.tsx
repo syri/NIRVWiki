@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import Page from './page';
+import NavigationPage from './navigationPage';
 
 
-interface ICategoryProps {
+interface INavigationCategoryProps {
   name: string;
   path: string;
   pages: IPage[];
 }
-interface ICategoryState {
+interface INavigationCategoryState {
   visible: boolean;
 }
 
-export default class Category extends Component<ICategoryProps, ICategoryState> {
-  constructor(props: ICategoryProps) {
+export default class NavigationCategory extends Component<INavigationCategoryProps, INavigationCategoryState> {
+  constructor(props: INavigationCategoryProps) {
     super(props);
 
     this.state = {
@@ -30,7 +30,7 @@ export default class Category extends Component<ICategoryProps, ICategoryState> 
     let pages: React.ReactNode[] = [];
 
     for (let page of this.props.pages) {
-      pages.push(<Page key={page.name} category={this.props.path} name={page.name} file={page.file} />);
+      pages.push(<NavigationPage key={page.name} category={this.props.path} name={page.name} file={page.file} />);
     }
 
     return pages;
