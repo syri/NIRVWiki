@@ -17,26 +17,90 @@
 		{
       "name": "Characters",
       "path": "characters/",
-			"pages": []
+			"pages": [
+        {
+					"name": "Empty",
+					"file": "empty.md"
+				}
+      ]
     },
     {
-      "name": "Worlds",
-      "path": "worlds/",
-			"pages": []
+      "name": "Items",
+      "path": "items/",
+      "pages": [
+        {
+					"name": "Empty",
+					"file": "empty.md"
+				}
+      ],
+      "categories": [
+        {
+          "name": "Consumables",
+          "path": "consumables/",
+          "pages": [
+            {
+              "name": "Empty",
+              "file": "empty.md"
+            }
+          ]
+        },
+        {
+          "name": "Equippables",
+          "path": "equippables/",
+          "pages": [
+            {
+              "name": "Empty",
+              "file": "empty.md"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Lore",
       "path": "lore/",
-			"pages": []
+      "pages": [
+        {
+					"name": "Empty",
+					"file": "empty.md"
+				}
+      ],
+      "categories": [
+        {
+          "name": "Story",
+          "path": "story/",
+          "pages": [
+            {
+              "name": "Empty",
+              "file": "empty.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Story",
-      "path": "story/",
-			"pages": []
+      "name": "Mobs",
+      "path": "mobs/",
+			"pages": [
+        {
+					"name": "Empty",
+					"file": "empty.md"
+				}
+      ]
     },
     {
-      "name": "Game Spec",
-      "path": "gamespec/",
+      "name": "Worlds",
+      "path": "worlds/",
+			"pages": [
+        {
+					"name": "Empty",
+					"file": "empty.md"
+				}
+      ]
+    },
+    {
+      "name": "Specifications",
+      "path": "specifications/",
 			"pages": [
         {
 				  "name": "Battle System",

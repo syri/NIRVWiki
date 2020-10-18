@@ -10,7 +10,7 @@ export default class NavigationHeader extends Component<INavigationHeaderProps, 
   render(): JSX.Element {
     return(
       <div id='navigation-header'>
-        <img id='navigation-header-logo' src={Logo} alt='Logo' />
+        <img id='navigation-header-logo' className='unselectable' src={Logo} alt='Logo' draggable={false} />
       </div>
     );
   }
