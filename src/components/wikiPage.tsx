@@ -73,7 +73,7 @@ export default class WikiPage extends Component<IWikiPageProps, IWikiPageState> 
       <div id='wiki-page'>
         <Navigation structure={this.state.structure} />
         <div id='content'>
-          <Markdown>{this.state.currentPage ? this.state.currentPage.content : ''}</Markdown>
+          <Markdown>{this.state.currentPage ? this.state.currentPage.content! : ''}</Markdown>
         </div>
       </div>
     );
